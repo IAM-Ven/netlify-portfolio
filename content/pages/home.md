@@ -1,7 +1,7 @@
 ---
-title: Hello World!
-featuredImage: /images/uploads/isabella juskova.jpg
-subtitle: This is the home page subtitle
+title: Philip Tietjen
+featuredImage: /images/uploads/3d3a2956-cropped.jpg
+subtitle: Web Developer
 meta:
   title: ''
 ---
