@@ -1,12 +1,9 @@
-siteTitle: Netlify CMS + React Starter
-siteUrl: 'https://netlify-cms-react-starter.netlify.com'
-siteDescription: >-
-  A starter project for creating lightning-fast, offline-first websites with
-  Netlify CMS and React.
+siteTitle: Philip Tietjen
+siteUrl: 'https://philip-tietjen.netlify.com/'
+siteDescription: A peak at development things I like to get up to and show off
 socialMediaCard:
-  image: /images/uploads/card-og.png
-  twitterCreatorAccount: '@Jinksi'
+  image: /images/uploads/3d3a2956-cropped.jpg
+  twitterCreatorAccount: '@phizzard'
   twitterSiteAccount: ''
-headerScripts: |-
-  <!-- Add your analytics scripts / verification meta here -->
+headerScripts: <!-- Add your analytics scripts / verification meta here -->
 enableServiceWorker: false
