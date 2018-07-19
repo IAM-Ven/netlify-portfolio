@@ -149,7 +149,19 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
           - {label: Noindex, name: noindex, widget: boolean, required: false}
 
-
+  - name: "profileCard"
+    label: "Profile Card"
+    delete: false
+    editor:
+        preview: false
+    files:
+        - file: "content/profileCard/data.yml"
+          label: "Data"
+          name: "data"
+          fields:
+              - {label: Full Name, name: fullName, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Display Image, name: displayImage, widget: image}
   - name: "settings"
     label: "Settings"
     delete: false # Prevent users from deleting documents in this collection

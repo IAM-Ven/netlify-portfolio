@@ -10,7 +10,8 @@ import Blog from './views/Blog'
 import SinglePost from './views/SinglePost'
 import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
-import Nav from './components/Nav'
+//import Nav from './components/Nav'
+import ProfileCard from './myComponents/ProfileCard'
 import Footer from './components/Footer'
 import GithubCorner from './components/GithubCorner'
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
@@ -51,6 +52,13 @@ class App extends Component {
       headerScripts
     } = globalSettings
 
+    const profileCard = this.getDocument('profileCard', 'data')
+    const {
+        fullName,
+        title,
+        displayImage
+    } = profileCard
+
     const posts = this.getDocuments('posts').filter(
       post => post.status !== 'Draft'
     )
@@ -83,9 +91,11 @@ class App extends Component {
               socialMediaCard && socialMediaCard.twitterSiteAccount
             }
           />
-
-          <Nav />
-
+          <ProfileCard
+              fullName={fullName}
+              title={title}
+              displayImage={displayImage}
+          />
           <Switch>
             <RouteWithMeta
               path='/'

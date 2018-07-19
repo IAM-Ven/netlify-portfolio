@@ -1,0 +1,37 @@
+.full-name, .title, .icon{
+    margin: 0;
+    padding: 3rem 1.5rem
+}
+
+.full-name{
+    font-size: 40px;
+}
+
+.title{
+    font-size: 24px;
+    padding: 4rem 1.5rem
+}
+
+.darkBlue{
+    background-color: #04121C;
+}
+.midDarkBlue{
+    background-color: #134A70;
+}
+.blue{
+    background-color: #2274AA;
+}
+.midLightBlue {
+    background-color: #6EA9D1;
+}
+.lightBlue {
+    background-color: #4CA5E0;
+}
+
+.darkBlue, .midDarkBlue, .blue, .midLightBlue, .lightBlue{
+    color: white;
+}
+a.menu-item, a.menu-item:hover{
+    color: white;
+    text-decoration: none;
+}

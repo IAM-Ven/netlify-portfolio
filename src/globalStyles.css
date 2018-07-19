@@ -1,10 +1,11 @@
 :root {
-  --primary: #0984d2;
-  --primary-light: #6fadff;
-  --secondary: #212121;
-  --lightGrey: whitesmoke;
-  --midGrey: #cacaca;
-  --darkGrey: #272727;
+  --primary: #2274A5;
+  --primary-light: #23B5D3;
+  --secondary: #23B5D3;
+  --lightGrey: #efefef;
+  --midGrey: #e4e4e4;
+  --darkGrey: #383D3B;
+  --midDark: #3F4442;
   --danger: #ff3d3d;
   --font-primary: 'Open Sans', sans-serif;
   --font-system: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
@@ -25,7 +26,7 @@ body {
   min-height: 100%;
   position: relative;
   background: white;
-  color: var(--secondary);
+  color: var(--darkGrey);
   font-size: 1.6em;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -98,9 +99,25 @@ blockquote {
 .white {
   background-color: white;
 }
+.primary {
+    background-color: var(--primary)
+}
+.secondary {
+    background-color: var(--secondary)
+}
+.midGrey{
+    background-color: var(--midGrey)
+}
+.lightGrey{
+    background-color: var(--lightGrey)
+}
 .dark {
-  background-color: var(--primary);
+  background-color: var(--darkGrey);
   color: white;
+}
+.midDark {
+    background-color: var(--midDark);
+    color: white;
 }
 .dark h1,
 .dark h2,

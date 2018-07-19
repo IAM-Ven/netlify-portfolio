@@ -1,6 +1,6 @@
 ---
 title: Philip Tietjen
-featuredImage: /images/uploads/3d3a2956-cropped.jpg
+featuredImage: /images/uploads/head-shot.jpg
 subtitle: Web Developer
 meta:
   title: ''
