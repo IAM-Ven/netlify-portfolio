@@ -17,32 +17,32 @@ const ProfileCard = ({
   return (
     <Container fluid>
         <Row>
-            <Col xs="3">
+            <Col className="profileImage" xs="12" md="4" lg="3">
                 <BackgroundImage src={displayImage} />
             </Col>
-            <Col xs="9">
+            <Col xs="12" md="8" lg="9">
                 <Row className="p-0">
-                    <Col className="p-0" xs="10">
+                    <Col className="p-0" sm="10">
                         <h1 className="full-name">{fullName}</h1>
                     </Col>
-                    <Col className="p-0 lightGrey text-center" xs="2">
+                    <Col className="p-0 lightGrey text-center download" sm="2">
                         <div className="icon">
-                            <Download className="" size={48} />
+                            <Download size={48} />
                         </div>
                     </Col>
                 </Row>
                 <Row className="p-0">
-                    <Col className="p-0" xs="10">
+                    <Col className="p-0" sm="10">
                         <h2 className="title lightGrey">{title}</h2>
                     </Col>
-                    <Col className="p-0 midGrey text-center" xs="2">
+                    <Col className="p-0 midGrey text-center linkedin" sm="2">
                         <div className="icon">
-                            <Linkedin className="" size={48} />
+                            <Linkedin size={48} />
                         </div>
                     </Col>
                 </Row>
                 <Row className="p-0">
-                    <Col className="p-0 text-center midDarkBlue">
+                    <Col sm="3" xs="6" className="p-0 text-center midDarkBlue">
                         <NavLink className="menu-item" to="/" exact>
                             <div className="icon">
                                 <Home size={38} />
@@ -50,7 +50,7 @@ const ProfileCard = ({
                             </div>
                         </NavLink>
                     </Col>
-                    <Col className="p-0 text-center blue">
+                    <Col sm="3" xs="6" className="p-0 text-center blue">
                         <NavLink className="menu-item" to="/about">
                             <div className="icon">
                                 <FileText size={38} />
@@ -58,7 +58,7 @@ const ProfileCard = ({
                             </div>
                         </NavLink>
                     </Col>
-                    <Col className="p-0 text-center midLightBlue">
+                    <Col sm="3" xs="6" className="p-0 text-center midLightBlue">
                         <NavLink className="menu-item" to="/blog" exact>
                             <div className="icon">
                                 <Briefcase size={38} />
@@ -66,7 +66,7 @@ const ProfileCard = ({
                             </div>
                         </NavLink>
                     </Col>
-                    <Col className="p-0 text-center lightBlue">
+                    <Col sm="3" xs="6" className="p-0 text-center lightBlue">
                         <NavLink className="menu-item" to="/contact" exact>
                             <div className="icon">
                                 <Mail size={38} />
