@@ -1,24 +1,23 @@
 ---
-title: Philip Tietjen
-featuredImage: /images/uploads/head-shot.jpg
-subtitle: Web Developer
+about:
+  title: "A little bit about me"
+  intro: "Just part Web developer / Closet Weeb / Dad / Duder trying not to piss off the internet."
+  blurb-1:
+    title: "Development"
+    icon: "code"
+  blurb-2:
+    title: "UI / UX Design"
+    icon: "edit-2"
+  blurb-3:
+    title: "Being Trash"
+    icon: "trash-2"
+attributes:
+  status: "Open to offers"
+  favouriteThing: "React JS"
+  jobType: "Permanent, Freelance"
+  mobility: "Ready to commute"
+  position: "Web Developer"
+  industry: "Web Development"
 meta:
   title: ''
 ---
-
-# Netlify CMS + React Starter
-
-A starter project for creating lightning-fast, offline-first websites with [Netlify CMS](https://netlifycms.org) and React.
-
-* **[Create React App](https://github.com/facebookincubator/create-react-app)**
-* **[React Router](https://github.com/ReactTraining/react-router)** for routing
-* **[React Helmet](https://github.com/nfl/react-helmet)** for document titles, descriptions, meta
-* **[React Snapshot](https://github.com/geelen/react-snapshot)** for pre-rendering to static html so it works without Javascript ⭐️
-* **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management
-
-## See also
-
-[Netlify CMS Docs](https://www.netlifycms.org/docs/)  
-[Netlify CMS Repo](https://github.com/netlify/netlify-cms)  
-[Hyperstatic](https://github.com/Jinksi/hyperstatic) – the same starter project minus Netlify CMS  
-[Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms)

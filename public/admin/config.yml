@@ -75,10 +75,44 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home-page"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
+          - label: "About"
+            required: false
+            name: about
+            widget: "object"
+            fields:
+                - {label: Title, name: title, widget: string, required: true}
+                - {label: Intro, name: intro, widget: markdown}
+                - label: "Blurb 1"
+                  name: "blurb-1"
+                  widget: "object"
+                  fields:
+                      - {label: Title, name: title, widget: string}
+                      - {label: Icon, name: Icon, widget: select, options: ["code","edit-2","trash-2"]}
+                      - {label: Description, name: description, widget: markdown}
+                - label: "Blurb 2"
+                  name: "blurb-2"
+                  widget: "object"
+                  fields:
+                      - {label: Title, name: title, widget: string}
+                      - {label: Icon, name: Icon, widget: select, options: ["code","edit-2","trash-2"]}
+                      - {label: Description, name: description, widget: markdown}
+                - label: "Blurb 3"
+                  name: "blurb-3"
+                  widget: "object"
+                  fields:
+                      - {label: Title, name: title, widget: string}
+                      - {label: Icon, name: Icon, widget: select, options: ["code","edit-2","trash-2"]}
+                      - {label: Description, name: description, widget: markdown}
+          - label: "Attributes"
+            name: "attributes"
+            widget: "object"
+            fields:
+                - {label: Status, name: status, widget: string}
+                - {label: Favourite Thing, name: favouriteThing, widget: string}
+                - {label: Job Type, name: jobType, widget: string}
+                - {label: Mobility, name: mobility, widget: string}
+                - {label: Position, name: position, widget: string}
+                - {label: Industry, name: industry, widget: string}
           - label: "Meta"
             required: false
             name: "meta"
