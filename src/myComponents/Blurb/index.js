@@ -9,9 +9,9 @@ const Blurb = ({
 }) => {
     return(
         <React.Fragment>
-            <h3>{title}</h3>
-            <Content body={description} />
             <Icon />
+            <h3>{title}</h3>
+            <Content source={description} />
         </React.Fragment>
     );
 }

@@ -23,3 +23,7 @@
   width: 100%;
   height: 100%;
 }
+
+.Content p {
+    font-size: 14px;
+}
