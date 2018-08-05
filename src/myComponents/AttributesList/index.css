@@ -1,5 +1,10 @@
 .attribute{
     text-transform: capitalize;
+    font-weight: bold;
+}
+
+.attribute h4 {
+    margin-bottom: 0;
 }
 
 .attributeContainer:nth-child(2), .attributeContainer:nth-child(3), .attributeContainer:nth-child(6){

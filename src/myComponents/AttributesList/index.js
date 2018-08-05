@@ -1,14 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import {string, object} from 'prop-types'
 import { Row, Col} from 'reactstrap'
 import './index.css'
 
 const capitalLetterRegex = /[A-Z]/g;
 const AttributesList = ({
+    className,
     attributes
 }) => {
     return(
-        <Row className="attributesList">
+        <Row className={`attributesList ${className}`}>
             {Object.entries(attributes).map(([attribute, value])=>{
                 attribute = attribute.replace(capitalLetterRegex, (match) => ` ${match}`);
 
@@ -23,9 +24,13 @@ const AttributesList = ({
         </Row>
     );
 }
+AttributesList.defaultProps = {
+    className: ""
+};
 
 AttributesList.propTypes = {
-    attributes: PropTypes.object
+    className: string,
+    attributes: object
 };
 
 export default AttributesList
