@@ -5,8 +5,12 @@
 
 .attribute h4 {
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .attributeContainer:nth-child(2), .attributeContainer:nth-child(3), .attributeContainer:nth-child(6){
     background-color: #efefef;
+}
+.attributeContainer:nth-child(1), .attributeContainer:nth-child(4), .attributeContainer:nth-child(5){
+    background-color: #e4e4e4;
 }

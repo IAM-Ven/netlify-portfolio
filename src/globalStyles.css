@@ -222,3 +222,6 @@ blockquote {
       rgba(255, 255, 255, 0)
     );
 }
+.blockTitle{
+    text-transform: uppercase;
+}

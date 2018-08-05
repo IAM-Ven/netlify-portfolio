@@ -46,7 +46,7 @@ const ProfileCard = ({
                         <NavLink className="menu-item" to="/" exact>
                             <div className="icon">
                                 <Home size={38} />
-                                <h3>Home</h3>
+                                <h3 className="blockTitle">Home</h3>
                             </div>
                         </NavLink>
                     </Col>
@@ -54,7 +54,7 @@ const ProfileCard = ({
                         <NavLink className="menu-item" to="/about">
                             <div className="icon">
                                 <FileText size={38} />
-                                <h3>Resume</h3>
+                                <h3 className="blockTitle">Resume</h3>
                             </div>
                         </NavLink>
                     </Col>
@@ -62,7 +62,7 @@ const ProfileCard = ({
                         <NavLink className="menu-item" to="/blog" exact>
                             <div className="icon">
                                 <Briefcase size={38} />
-                                <h3>Projects</h3>
+                                <h3 className="blockTitle">Projects</h3>
                             </div>
                         </NavLink>
                     </Col>
@@ -70,7 +70,7 @@ const ProfileCard = ({
                         <NavLink className="menu-item" to="/contact" exact>
                             <div className="icon">
                                 <Mail size={38} />
-                                <h3>Contact</h3>
+                                <h3 className="blockTitle">Contact</h3>
                             </div>
                         </NavLink>
                     </Col>

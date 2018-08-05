@@ -10,7 +10,7 @@ const Blurb = ({
     return(
         <React.Fragment>
             <Icon />
-            <h3>{title}</h3>
+            <h3 className="blockTitle">{title}</h3>
             <Content source={description} />
         </React.Fragment>
     );
