@@ -200,6 +200,8 @@ collections: # A list of collections the CMS should be able to edit
     label: "Employment"
     editor:
         preview: false
+    folder: content/employment
+    create: true
     fields:
         - {label: Name, name: name, widget: string, required: true}
         - {label: Position, name: position, widget: string, required: true}
@@ -210,6 +212,8 @@ collections: # A list of collections the CMS should be able to edit
     label: "Professional Skills"
     editor:
         preview: false
+    folder: content/professionalSkills
+    create: true
     fields:
         - {label: Name, name: name, widget: string, required: true}
         - {label: Years of Experience, name: yearsOfExperience, widget: number, valueType: float}
