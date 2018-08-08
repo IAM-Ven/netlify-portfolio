@@ -196,6 +196,25 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Full Name, name: fullName, widget: string}
               - {label: Title, name: title, widget: string}
               - {label: Display Image, name: displayImage, widget: image}
+  - name: "employment"
+    label: "Employment"
+    editor:
+        preview: false
+    fields:
+        - {label: Name, name: name, widget: string, required: true}
+        - {label: Position, name: position, widget: string, required: true}
+        - {label: Image, name: image, widget: image, default: /logo.png}
+        - {label: Start Date, name: startDate, widget: date}
+        - {label: End Date, name: endDate, widget: date}
+  - name: "professionalSkills"
+    label: "Professional Skills"
+    editor:
+        preview: false
+    fields:
+        - {label: Name, name: name, widget: string, required: true}
+        - {label: Years of Experience, name: yearsOfExperience, widget: number, valueType: float}
+        - {label: Skill Level, name: skillLevel, widget: number, valueType: float, min: 0, max: 100}
+        - {label: Image, name: image, widget: image, default: /logo.png}
   - name: "settings"
     label: "Settings"
     delete: false # Prevent users from deleting documents in this collection
