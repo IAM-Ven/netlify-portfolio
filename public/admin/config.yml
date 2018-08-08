@@ -198,6 +198,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Display Image, name: displayImage, widget: image}
   - name: "employment"
     label: "Employment"
+    slug: "{{slug}}"
     editor:
         preview: false
     folder: content/employment
@@ -210,6 +211,7 @@ collections: # A list of collections the CMS should be able to edit
         - {label: End Date, name: endDate, widget: date}
   - name: "professionalSkills"
     label: "Professional Skills"
+    slug: "{{slug}}"
     editor:
         preview: false
     folder: content/professionalSkills
