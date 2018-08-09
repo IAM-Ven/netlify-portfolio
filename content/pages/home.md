@@ -31,17 +31,6 @@ attributes:
   mobility: Ready to commute
   position: Web Developer
   status: Open to offers
-featuredEmployment:
-  - job: LabX Media Group
-  - job: 44North Digital Marketing
-  - job: One More Story Games
-featuredSkills:
-  - skill: React Js
-  - skill: Node Js
-  - skill: JQuery
-  - skill: CSS
-  - skill: SQL
 meta:
   title: ''
 ---
-
