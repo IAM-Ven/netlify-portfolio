@@ -118,9 +118,9 @@ collections: # A list of collections the CMS should be able to edit
             name: "featuredEmployment"
             widget: "list"
             field:
-              - label: Job
-                name: job
-                widget: relation
+              - label: "Job"
+                name: "job"
+                widget: "relation"
                 collection: "employment"
                 searchFields: ["title"]
                 valueField: "title"
@@ -130,9 +130,9 @@ collections: # A list of collections the CMS should be able to edit
             name: "featuredSkills"
             widget: "list"
             field:
-              - label: Skill
-                name: skill
-                widget: relation
+              - label: "Skill"
+                name: "skill"
+                widget: "relation"
                 collection: "professionalSkills"
                 searchFields: ["title"]
                 valueField: "title"
