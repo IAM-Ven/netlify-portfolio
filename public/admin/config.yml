@@ -123,7 +123,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "relation"
                 collection: "employment"
                 searchFields: ["title"]
-                valueField: "title"
+                valueField: "name"
                 displayFields: ["title", "position"]
 
           - label: "Featured Skills"
@@ -135,7 +135,7 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "relation"
                 collection: "professionalSkills"
                 searchFields: ["title"]
-                valueField: "title"
+                valueField: "name"
                 displayFields: ["title", "image"]
 
           - label: "Meta"
