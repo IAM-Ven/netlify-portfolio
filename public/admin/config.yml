@@ -117,7 +117,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Featured Employment"
             name: "featuredEmployment"
             widget: "list"
-            field:
+            fields:
               - label: "Job"
                 name: "job"
                 widget: "relation"
@@ -128,7 +128,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Featured Skills"
             name: "featuredSkills"
             widget: "list"
-            field:
+            fields:
               - label: "Skill"
                 name: "skill"
                 widget: "relation"
