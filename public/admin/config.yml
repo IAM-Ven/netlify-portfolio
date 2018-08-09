@@ -116,19 +116,27 @@ collections: # A list of collections the CMS should be able to edit
 
           - label: "Featured Employment"
             name: "featuredEmployment"
-            widget: "relation"
-            collection: "employment"
-            searchFields: ["title"]
-            valueField: "title"
-            displayFields: ["title", "position"]
+            widget: "list"
+            field:
+              - label: Job
+                name: job
+                widget: relation
+                collection: "employment"
+                searchFields: ["title"]
+                valueField: "title"
+                displayFields: ["title", "position"]
 
           - label: "Featured Skills"
             name: "featuredSkills"
-            widget: "relation"
-            collection: "professionalSkills"
-            searchFields: ["title"]
-            valueField: "title"
-            displayFields: ["title", "image"]
+            widget: "list"
+            field:
+              - label: Skill
+                name: skill
+                widget: relation
+                collection: "professionalSkills"
+                searchFields: ["title"]
+                valueField: "title"
+                displayFields: ["title", "image"]
 
           - label: "Meta"
             required: false
