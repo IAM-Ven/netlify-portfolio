@@ -124,6 +124,7 @@ collections: # A list of collections the CMS should be able to edit
                 collection: "employment"
                 searchFields: ["title"]
                 valueField: "name"
+                displayFields: ["title"]
 
           - label: "Featured Skills"
             name: "featuredSkills"
@@ -135,6 +136,7 @@ collections: # A list of collections the CMS should be able to edit
                 collection: "professionalSkills"
                 searchFields: ["title"]
                 valueField: "name"
+                displayFields: ["title"]
 
           - label: "Meta"
             required: false
