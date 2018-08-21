@@ -31,10 +31,14 @@ attributes:
   mobility: Ready to commute
   position: Web Developer
   status: Open to offers
-featuredEmployment:
-  - {}
+featuredEmployment: []
 featuredSkills:
-  - {}
+  - skill: react-js
+  - skill: node-js
+  - skill: javascript
+  - skill: jquery
+  - skill: css
+  - skill: sql
 meta:
   title: ''
 ---
