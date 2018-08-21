@@ -59,8 +59,8 @@ export default ({ fields, featuredEmployment, featuredSkills }) => {
                     <div className="p-5">
                         <h2 className="blockTitle">Professional Skills</h2>
                         <div>
-                            {featuredSkills.map(({name, title, skillLevel})=>{
-                                return <ProgressBar key={name} title={title} fill={skillLevel} />;
+                            {featuredSkills.map(({name, title, yearsOfExperience ,skillLevel})=>{
+                                return <ProgressBar key={name} title={title} subTitle={`${yearsOfExperience} years of experience`} fill={skillLevel} />;
                             })}
                         </div>
 

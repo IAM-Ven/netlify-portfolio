@@ -4,11 +4,20 @@ import {Progress} from 'reactstrap';
 
 const ProgressBar = ({
     title,
+    subTitle,
     fill
 }) => {
     return(
-        <div className="ProgressBar my-3">
-            <h4 className="blockTitle">{title}</h4>
+        <div className="ProgressBar my-4">
+            {title && (
+                <h4 className="blockTitle">
+                    {title}
+                    {subTitle && (
+                        <small><em> - {subTitle}</em></small>
+                    )}
+                </h4>
+            )}
+            
             <Progress value={fill} />
         </div>  
     );
