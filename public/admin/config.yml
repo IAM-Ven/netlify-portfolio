@@ -122,8 +122,8 @@ collections: # A list of collections the CMS should be able to edit
                 name: "job"
                 widget: "relation"
                 collection: "employment"
-                searchFields: ["name","title"]
-                valueField: "name"
+                searchFields: ["key","title"]
+                valueField: "key"
                 displayFields: ["title"]
 
           - label: "Featured Skills"
@@ -134,8 +134,8 @@ collections: # A list of collections the CMS should be able to edit
                 name: "skill"
                 widget: "relation"
                 collection: "professionalSkills"
-                searchFields: ["name","title"]
-                valueField: "name"
+                searchFields: ["key","title"]
+                valueField: "key"
                 displayFields: ["title"]
 
           - label: "Meta"
@@ -231,6 +231,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: Title, name: title, widget: string, required: true}
+      - {label: Key, name: key, widget: string, required: true}
       - {label: Position, name: position, widget: string, required: true}
       - {label: Image, name: image, widget: image, default: /images/logo.png}
       - {label: Start Date, name: startDate, widget: date}
@@ -245,6 +246,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: title, name: title, widget: string, required: true}
+      - {label: Key, name: key, widget: string, required: true}
       - {label: Years of Experience, name: yearsOfExperience, widget: number, valueType: float}
       - {label: Skill Level, name: skillLevel, widget: number, valueType: float, min: 0, max: 100}
       - {label: Image, name: image, widget: image, default: /images/logo.png}
