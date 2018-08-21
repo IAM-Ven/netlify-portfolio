@@ -2,8 +2,7 @@
 about:
   blurb-1:
     description: >-
-      As a computer programming graduate and years of work experience under my
-      belt, I strive to provide clean, reliable solutions while matching design
+      I strive to provide clean, reliable solutions while matching design
       patterns in a given project. Mostly focused in building web applications
       using modern libraries like ReactJS, another passion I have is game
       development.
@@ -23,6 +22,10 @@ about:
   intro: >-
     Just part Web developer / Closet Weeb / Dad / Duder trying not to piss off
     the internet.
+
+
+    Oh also I'm a computer programming graduate with some years of work
+    experience under my belt.
   title: A little bit about me
 attributes:
   favouriteThing: React JS
