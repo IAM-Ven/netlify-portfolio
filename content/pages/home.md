@@ -31,6 +31,11 @@ attributes:
   mobility: Ready to commute
   position: Web Developer
   status: Open to offers
+featuredEmployment:
+  - {}
+featuredSkills:
+  - {}
 meta:
   title: ''
 ---
+
