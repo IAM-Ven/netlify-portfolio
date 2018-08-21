@@ -103,6 +103,10 @@ class App extends Component {
               component={Home}
               description={siteDescription}
               fields={this.getDocument('pages', 'home')}
+              featuredSkills={this.getDocument('pages', 'home').featuredSkills.map(({skill}) => this.getDocument('professionalSkills', skill)).sort((a, b)=>{
+                  return a.skillLevel < b.skillLevel;
+                })}
+              featuredEmployment={this.getDocument('pages', 'home').featuredEmployment.map(({job}) => this.getDocument('employment', job))}
             />
             <RouteWithMeta
               path='/about/'

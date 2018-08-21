@@ -1,12 +1,14 @@
 import React from 'react'
-import {Container, Row, Col, Progress} from 'reactstrap'
+import {Container, Row, Col} from 'reactstrap'
 
 import AttributesList from '../myComponents/AttributesList'
 import Blurb from '../myComponents/Blurb'
+import ProgressBar from '../myComponents/ProgressBar'
+import MiniTimeline from '../myComponents/MiniTimeline'
 import {Code, Edit, Trash} from 'react-feather'
 import './Home.css'
 
-export default ({ fields }) => {
+export default ({ fields, featuredEmployment, featuredSkills }) => {
   const { about, attributes} = fields
 
   return (
@@ -49,12 +51,7 @@ export default ({ fields }) => {
             <Row>
                 <Col className="p-0 midGrey" lg="3" md="4" sm="12">
                     <div className="p-5">
-                        <h2 className="blockTitle">Employment</h2>
-                        <ul>
-                            <li>Labx Media Group</li>
-                            <li>44 North Digital Marketing</li>
-                            <li>One More Story Games</li>
-                        </ul>
+                        <MiniTimeline title="Employment" jobs={featuredEmployment} />
                     </div>
 
                 </Col>
@@ -62,16 +59,9 @@ export default ({ fields }) => {
                     <div className="p-5">
                         <h2 className="blockTitle">Professional Skills</h2>
                         <div>
-                            <h4 className="blockTitle">React JS</h4>
-                            <Progress value={90} />
-                            <h4 className="blockTitle">Node JS</h4>
-                            <Progress value={80} />
-                            <h4 className="blockTitle">Jquery</h4>
-                            <Progress value={75} />
-                            <h4 className="blockTitle">CSS</h4>
-                            <Progress value={70} />
-                            <h4 className="blockTitle">SQL</h4>
-                            <Progress value={50} />
+                            {featuredSkills.map(({name, title, skillLevel})=>{
+                                return <ProgressBar key={name} title={title} fill={skillLevel} />;
+                            })}
                         </div>
 
                     </div>
