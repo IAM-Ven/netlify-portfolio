@@ -234,6 +234,24 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Image, name: image, widget: image, default: /images/logo.png}
       - {label: Start Date, name: startDate, widget: date}
       - {label: End Date, name: endDate, widget: date, required: false}
+      - {label: Description, name: description, widget: markdown}
+
+  - name: "education"
+    label: "Education"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    folder: content/education
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Key, name: key, widget: string, required: true}
+      - {label: Course, name: course, widget: string, required: true}
+      - {label: Degree, name: degree, widget: string}
+      - {label: Image, name: image, widget: image, default: /images/logo.png}
+      - {label: Start Date, name: startDate, widget: date}
+      - {label: End Date, name: endDate, widget: date, required: false}
+      - {label: Description, name: description, widget: markdown}
 
   - name: "professionalSkills"
     label: "Professional Skills"
@@ -248,6 +266,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Years of Experience, name: yearsOfExperience, widget: number, valueType: float}
       - {label: Skill Level, name: skillLevel, widget: number, valueType: float, min: 0, max: 100}
       - {label: Image, name: image, widget: image, default: /images/logo.png}
+      - {label: Description, name: description, widget: markdown}
 
   - name: "settings"
     label: "Settings"
