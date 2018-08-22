@@ -12,7 +12,7 @@ const MiniTimeline = ({
             {title && (
                 <h2 className="blockTitle">Employment</h2>
             )}
-            <ul>
+            <ul className="pt-2">
                 {jobs.map((job, index)=>{
                     return (
                         <li key={`job-${index}`} className="MiniTimeLineItem mb-3">
