@@ -113,6 +113,11 @@ class App extends Component {
               exact
               component={Resume}
               fields={this.getDocument('pages', 'resume')}
+              experience={this.getDocuments('employment').sort((a, b)=>{
+                return a.startDate < b.startDate;
+              })}
+              education={this.getDocuments('education')}
+              skills={this.getDocuments('professionalSkills')}
             />
             <RouteWithMeta
               path='/contact/'
