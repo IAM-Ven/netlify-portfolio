@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import ScrollToTop from './components/ScrollToTop'
 import Meta from './components/Meta'
 import Home from './views/Home'
-import About from './views/About'
+import Resume from './views/Resume'
 import Blog from './views/Blog'
 import SinglePost from './views/SinglePost'
 import Contact from './views/Contact'
@@ -109,10 +109,10 @@ class App extends Component {
               featuredEmployment={this.getDocument('pages', 'home').featuredEmployment.map(({job}) => this.getDocument('employment', job))}
             />
             <RouteWithMeta
-              path='/about/'
+              path='/resume/'
               exact
-              component={About}
-              fields={this.getDocument('pages', 'about')}
+              component={Resume}
+              fields={this.getDocument('pages', 'resume')}
             />
             <RouteWithMeta
               path='/contact/'

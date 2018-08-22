@@ -51,7 +51,7 @@ const ProfileCard = ({
                         </NavLink>
                     </Col>
                     <Col sm="3" xs="6" className="p-0 text-center blue">
-                        <NavLink className="menu-item" to="/about">
+                        <NavLink className="menu-item" to="/resume">
                             <div className="icon">
                                 <FileText size={38} />
                                 <h3 className="blockTitle">Resume</h3>
