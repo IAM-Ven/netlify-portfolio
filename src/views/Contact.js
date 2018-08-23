@@ -3,23 +3,20 @@ import { MapPin, Smartphone, Mail } from 'react-feather'
 
 import PageHeader from '../components/PageHeader'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
-import Content from '../components/Content'
 import './Contact.css'
 
 export default ({ fields }) => {
-  const { body, title, subtitle, featuredImage, address, phone, email } = fields
+  const { body, title, address, phone, email } = fields
   return (
     <div className='Contact'>
       <PageHeader
         title={title}
-        subtitle={subtitle}
-        backgroundImage={featuredImage}
+        subtitle={body}
       />
 
       <div className='section Contact--Section1'>
         <div className='container Contact--Section1--Container'>
           <div>
-            <Content source={body} />
 
             <div className='Contact--Details'>
               {address && (
