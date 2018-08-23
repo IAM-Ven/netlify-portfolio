@@ -7,7 +7,7 @@ image: /images/uploads/georgian-logo.png
 startDate: '2014-09-01'
 endDate: '2016-08-15'
 description: |-
-  ## Courses
+  #### Courses
 
   * Comp Org and Architecture (COMP1045) 
   * Internet and Web Fundamentals (COMP1002) 
