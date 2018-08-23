@@ -1,5 +1,5 @@
 ---
-title: Contact us
+title: Contact
 featuredImage: /images/uploads/mark-chang-74-3.jpg
 subtitle: bleh
 address: 'Barrie, Ontario'
