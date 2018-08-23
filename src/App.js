@@ -117,7 +117,9 @@ class App extends Component {
                 return a.startDate < b.startDate;
               })}
               education={this.getDocuments('education')}
-              skills={this.getDocuments('professionalSkills')}
+              skills={this.getDocuments('professionalSkills').sort((a, b)=>{
+                return a.skillLevel < b.skillLevel;
+              })}
             />
             <RouteWithMeta
               path='/contact/'
