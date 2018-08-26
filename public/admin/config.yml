@@ -267,6 +267,30 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Skill Level, name: skillLevel, widget: number, valueType: float, min: 0, max: 100}
       - {label: Image, name: image, widget: image, default: /images/logo.png}
       - {label: Description, name: description, widget: markdown}
+  - name: "projects"
+    label: "Projects"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    folder: content/projects
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string, required: true}
+      - {label: Image, name: image, widget: image, default: /images/logo.png}
+      - {label: Hero Image, name: heroImage, widget: image, default: /images/logo.png}
+      - {label: key, name: key, widget: string, required: true}
+      - {label: Detail, name: detail, widget: markdown}
+      - label: "Skills Used"
+        name: "skillsUsed"
+        widget: "list"
+        fields:
+          - label: "Skill"
+            name: "skill"
+            widget: "relation"
+            collection: "professionalSkills"
+            searchFields: ["title", "key"]
+            valueField: "key"
+
 
   - name: "settings"
     label: "Settings"
