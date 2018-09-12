@@ -5,8 +5,7 @@ import data from '../src/data.json'
 import Home from '../src/views/Home'
 import Resume from '../src/views/Resume'
 import Contact from '../src/views/Contact'
-import Blog from '../src/views/Blog'
-import SinglePost from '../src/views/SinglePost'
+import Projects from '../src/views/Projects'
 
 console.log('React version', React.version)
 
