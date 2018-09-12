@@ -6,8 +6,7 @@ import ScrollToTop from './components/ScrollToTop'
 import Meta from './components/Meta'
 import Home from './views/Home'
 import Resume from './views/Resume'
-import Blog from './views/Blog'
-import SinglePost from './views/SinglePost'
+import Projects from './views/Projects'
 import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
 //import Nav from './components/Nav'
@@ -16,8 +15,6 @@ import Footer from './components/Footer'
 import GithubCorner from './components/GithubCorner'
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
 import data from './data.json'
-import { slugify } from './util/url'
-import { documentHasTerm, getCollectionTerms } from './util/collection'
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
   <Route
@@ -58,14 +55,6 @@ class App extends Component {
         title,
         displayImage
     } = profileCard
-
-    const posts = this.getDocuments('posts').filter(
-      post => post.status !== 'Draft'
-    )
-    const categoriesFromPosts = getCollectionTerms(posts, 'categories')
-    const postCategories = this.getDocuments('postCategories').filter(
-      category => categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
-    )
 
     return (
       <Router>
@@ -129,50 +118,12 @@ class App extends Component {
               siteTitle={siteTitle}
             />
             <RouteWithMeta
-              path='/blog/'
+              path='/projects/'
               exact
-              component={Blog}
-              fields={this.getDocument('pages', 'blog')}
-              posts={posts}
-              postCategories={postCategories}
+              component={Projects}
+              fields={this.getDocument('pages', 'projects')}
+              projects={this.getDocuments('projects')}
             />
-
-            {posts.map((post, index) => {
-              const path = slugify(`/blog/${post.title}`)
-              const nextPost = posts[index - 1]
-              const prevPost = posts[index + 1]
-              return (
-                <RouteWithMeta
-                  key={path}
-                  path={path}
-                  exact
-                  component={SinglePost}
-                  fields={post}
-                  nextPostURL={nextPost && slugify(`/blog/${nextPost.title}/`)}
-                  prevPostURL={prevPost && slugify(`/blog/${prevPost.title}/`)}
-                />
-              )
-            })}
-
-            {postCategories.map(postCategory => {
-              const slug = slugify(postCategory.title)
-              const path = slugify(`/blog/category/${slug}`)
-              const categoryPosts = posts.filter(post =>
-                documentHasTerm(post, 'categories', slug)
-              )
-              return (
-                <RouteWithMeta
-                  key={path}
-                  path={path}
-                  exact
-                  component={Blog}
-                  fields={this.getDocument('pages', 'blog')}
-                  posts={categoryPosts}
-                  postCategories={postCategories}
-                />
-              )
-            })}
-
             <Route render={() => <NoMatch siteUrl={siteUrl} />} />
           </Switch>
           <Footer />

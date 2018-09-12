@@ -21,7 +21,7 @@ const getDocument = (collection, name) =>
 const getDocuments = (collection, name) => data[collection]
 
 const globalSettings = getDocument('settings', 'global')
-const posts = getDocuments('posts')
+const projects = getDocuments('projects')
 
 // Preview Templates
 CMS.registerPreviewTemplate('home-page', ({ entry }) => (
@@ -33,11 +33,8 @@ CMS.registerPreviewTemplate('resume-page', ({ entry }) => (
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <Contact fields={entry.toJS().data} siteTitle={globalSettings.siteTitle} />
 ))
-CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
-  <Blog fields={entry.toJS().data} posts={posts} />
-))
-CMS.registerPreviewTemplate('posts', ({ entry }) => (
-  <SinglePost fields={entry.toJS().data} />
+CMS.registerPreviewTemplate('projects-page', ({ entry }) => (
+  <Projects fields={entry.toJS().data} projects={projects} />
 ))
 
 // Return to home when user logging out

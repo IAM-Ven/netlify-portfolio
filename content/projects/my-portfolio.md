@@ -4,7 +4,7 @@ image: /images/logo.png
 heroImage: /images/logo.png
 key: my-portfolio
 detail: >+
-  ##TIME TO GET META
+  ## TIME TO GET META
 
 
   Yes Im using my own portfolio site that you're currently on as a project and
