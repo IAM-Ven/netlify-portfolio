@@ -15,10 +15,8 @@ about:
     title: Design
   blurb-3:
     description: >-
-      From time to time I'll write something that I can look at with pride oh
-      how well I've created a piece of functionality. Other times I can look
-      back at something and say out loud "This is absolute trash!" \*shrug\*
-    title: Being Trash
+      Simply put, I love creating cool things. Whether it's the technology an application is built in, if the idea and functionality is cool, or even if something can have a cool spin on it.
+    title: Love Cool Stuff
   intro: >-
     Just part Web developer / Closet Weeb / Dad / Duder trying not to piss off
     the internet.

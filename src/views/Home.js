@@ -5,7 +5,7 @@ import AttributesList from '../myComponents/AttributesList'
 import Blurb from '../myComponents/Blurb'
 import ProgressBar from '../myComponents/ProgressBar'
 import MiniTimeline from '../myComponents/MiniTimeline'
-import {Code, Edit, Trash} from 'react-feather'
+import {Code, Edit, Zap} from 'react-feather'
 import './Home.css'
 
 export default ({ fields, featuredEmployment, featuredSkills }) => {
@@ -41,7 +41,7 @@ export default ({ fields, featuredEmployment, featuredSkills }) => {
                                 <Blurb
                                     title={about["blurb-3"].title}
                                     description={about["blurb-3"].description}
-                                    Icon={Trash}
+                                    Icon={Zap}
                                 />
                             </Col>
                         </Row>
