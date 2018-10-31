@@ -26,9 +26,9 @@ const ProfileCard = ({
                         <h1 className="full-name">{fullName}</h1>
                     </Col>
                     <Col className="p-0 lightGrey text-center download" sm="2">
-                        <div className="icon">
+                        <a className="icon" href="https://drive.google.com/file/d/1mOzRBbWxGTWG5YKrssUyhs1P0YOqvOHi/view">
                             <Download size={48} />
-                        </div>
+                        </a>
                     </Col>
                 </Row>
                 <Row className="p-0">
@@ -36,9 +36,9 @@ const ProfileCard = ({
                         <h2 className="title lightGrey">{title}</h2>
                     </Col>
                     <Col className="p-0 midGrey text-center linkedin" sm="2">
-                        <div className="icon">
+                        <a className="icon" href="https://www.linkedin.com/in/philip-tietjen-3a746851">
                             <Linkedin size={48} />
-                        </div>
+                        </a>
                     </Col>
                 </Row>
                 <Row className="p-0">
