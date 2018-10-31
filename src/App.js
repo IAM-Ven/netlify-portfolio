@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
+import moment from 'moment';
 
 import ScrollToTop from './components/ScrollToTop'
 import Meta from './components/Meta'
@@ -8,7 +9,6 @@ import Home from './views/Home'
 import Resume from './views/Resume'
 import Projects from './views/Projects'
 import NoMatch from './views/NoMatch'
-//import Nav from './components/Nav'
 import ProfileCard from './myComponents/ProfileCard'
 import Footer from './components/Footer'
 import GithubCorner from './components/GithubCorner'
@@ -102,11 +102,11 @@ class App extends Component {
               component={Resume}
               fields={this.getDocument('pages', 'resume')}
               experience={this.getDocuments('employment').sort((a, b)=>{
-                return a.startDate < b.startDate;
+                return  new Date(b.startDate) -  new Date(a.startDate);
               })}
               education={this.getDocuments('education')}
               skills={this.getDocuments('professionalSkills').sort((a, b)=>{
-                return a.skillLevel < b.skillLevel;
+                return b.skillLevel - a.skillLevel;
               })}
             />
             <RouteWithMeta
