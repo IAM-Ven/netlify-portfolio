@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
-import moment from 'moment';
 
 import ScrollToTop from './components/ScrollToTop'
 import Meta from './components/Meta'
