@@ -3,10 +3,9 @@ import React from 'react'
 import '../src/globalStyles.css'
 import data from '../src/data.json'
 import Home from '../src/views/Home'
-import About from '../src/views/About'
+import Resume from '../src/views/Resume'
 import Contact from '../src/views/Contact'
-import Blog from '../src/views/Blog'
-import SinglePost from '../src/views/SinglePost'
+import Projects from '../src/views/Projects'
 
 console.log('React version', React.version)
 
@@ -21,23 +20,20 @@ const getDocument = (collection, name) =>
 const getDocuments = (collection, name) => data[collection]
 
 const globalSettings = getDocument('settings', 'global')
-const posts = getDocuments('posts')
+const projects = getDocuments('projects')
 
 // Preview Templates
 CMS.registerPreviewTemplate('home-page', ({ entry }) => (
   <Home fields={entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('about-page', ({ entry }) => (
-  <About fields={entry.toJS().data} />
+CMS.registerPreviewTemplate('resume-page', ({ entry }) => (
+  <Resume fields={entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <Contact fields={entry.toJS().data} siteTitle={globalSettings.siteTitle} />
 ))
-CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
-  <Blog fields={entry.toJS().data} posts={posts} />
-))
-CMS.registerPreviewTemplate('posts', ({ entry }) => (
-  <SinglePost fields={entry.toJS().data} />
+CMS.registerPreviewTemplate('projects-page', ({ entry }) => (
+  <Projects fields={entry.toJS().data} projects={projects} />
 ))
 
 // Return to home when user logging out

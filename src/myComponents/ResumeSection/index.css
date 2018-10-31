@@ -1,0 +1,29 @@
+@media (min-width: 0px) { 
+    .ResumeSection .LazyImage{
+      width: 50%;
+    }
+  }
+
+@media (min-width: 576px) { 
+    .ResumeSection .LazyImage{
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .ResumeSection .LazyImage{
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .ResumeSection .LazyImage{
+      width: 25%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .ResumeSection .LazyImage{
+      width: 25%;
+    }
+  }

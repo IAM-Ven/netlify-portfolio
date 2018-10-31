@@ -2,8 +2,7 @@
 about:
   blurb-1:
     description: >-
-      As a computer programming graduate and years of work experience under my
-      belt, I strive to provide clean, reliable solutions while matching design
+      I strive to provide clean, reliable solutions while matching design
       patterns in a given project. Mostly focused in building web applications
       using modern libraries like ReactJS, another passion I have is game
       development.
@@ -16,13 +15,15 @@ about:
     title: Design
   blurb-3:
     description: >-
-      From time to time I'll write something that I can look at with pride oh
-      how well I've created a piece of functionality. Other times I can look
-      back at something and say out loud "This is absolute trash!" \*shrug\*
-    title: Being Trash
+      Simply put, I love creating cool things. Whether it's the technology an application is built in, if the idea and functionality is cool, or even if something can have a cool spin on it.
+    title: Love Cool Stuff
   intro: >-
     Just part Web developer / Closet Weeb / Dad / Duder trying not to piss off
     the internet.
+
+
+    Oh also I'm a computer programming graduate with some years of work
+    experience under my belt.
   title: A little bit about me
 attributes:
   favouriteThing: React JS
@@ -31,6 +32,18 @@ attributes:
   mobility: Ready to commute
   position: Web Developer
   status: Open to offers
+featuredEmployment:
+  - job: labx-media-group
+  - job: 44north-digital-marketing
+  - job: one-more-story-games
+featuredSkills:
+  - skill: react-js
+  - skill: node-js
+  - skill: javascript
+  - skill: jquery
+  - skill: css
+  - skill: sql
 meta:
   title: ''
 ---
+

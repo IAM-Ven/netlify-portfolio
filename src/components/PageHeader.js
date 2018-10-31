@@ -18,7 +18,7 @@ const PageHeader = ({
       {backgroundImage && (
         <BackgroundImage src={backgroundImage} opacity={0.4} />
       )}
-      <div className='container relative'>
+      <div className='container-fluid px-5'>
         <h1 className='PageHeader--Title'>{title}</h1>
         {subtitle && (
           <Content className='PageHeader--Subtitle' src={subtitle} />
