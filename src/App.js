@@ -7,7 +7,6 @@ import Meta from './components/Meta'
 import Home from './views/Home'
 import Resume from './views/Resume'
 import Projects from './views/Projects'
-import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
 //import Nav from './components/Nav'
 import ProfileCard from './myComponents/ProfileCard'
@@ -111,13 +110,6 @@ class App extends Component {
               })}
             />
             <RouteWithMeta
-              path='/contact/'
-              exact
-              component={Contact}
-              fields={this.getDocument('pages', 'contact')}
-              siteTitle={siteTitle}
-            />
-            <RouteWithMeta
               path='/projects/'
               exact
               component={Projects}
@@ -126,7 +118,7 @@ class App extends Component {
             />
             <Route render={() => <NoMatch siteUrl={siteUrl} />} />
           </Switch>
-          <Footer />
+          <Footer fields={this.getDocument('pages', 'contact')} />
         </div>
       </Router>
     )

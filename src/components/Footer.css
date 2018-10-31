@@ -1,4 +1,25 @@
 .Footer {
-  padding: 3rem 0;
-  background: var(--lightGrey);
+  background: var(--darkGrey);
+  color: white;
+}
+
+.Footer .Contact {
+  padding: 2rem 0;
+  justify-content: space-around;
+}
+
+.Footer .Disclaimer{
+  padding: 1.5rem 0;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px;
+  background-color: #242726;
+}
+
+@media only screen and (max-width: 575px) {
+  .Footer .Contact {
+    text-align: center;
+    flex-direction: column;
+  }
+  
 }

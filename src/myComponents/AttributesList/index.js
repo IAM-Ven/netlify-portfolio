@@ -16,7 +16,7 @@ const AttributesList = ({
                 return(
                     <Col key={attribute} className="p-0 attributeContainer" sm="6" xs="12">
                         <div className="p-5 attribute">
-                            <h4>{attribute}</h4>
+                            <h4 className="blockTitle">{attribute}</h4>
                             <p><small>{value}</small></p>
                         </div>
                     </Col>

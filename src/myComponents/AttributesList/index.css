@@ -6,6 +6,9 @@
 .attribute h4 {
     margin-bottom: 0;
     text-transform: uppercase;
+    display: list-item;
+    font-size: 16px;
+    list-style: square;
 }
 
 .attributeContainer:nth-child(2), .attributeContainer:nth-child(3), .attributeContainer:nth-child(6){

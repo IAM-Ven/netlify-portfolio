@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Container, Row, Col} from 'reactstrap'
-import { Download, Linkedin, Home, FileText, Briefcase, Mail } from 'react-feather'
+import { Download, Linkedin, Home, FileText, Briefcase } from 'react-feather'
 import { NavLink} from 'react-router-dom'
 import BackgroundImage from '../../components/BackgroundImage'
 import './index.css'
@@ -42,7 +42,7 @@ const ProfileCard = ({
                     </Col>
                 </Row>
                 <Row className="p-0">
-                    <Col sm="3" xs="6" className="p-0 text-center midDarkBlue">
+                    <Col sm="4" xs="4" className="p-0 text-center midDarkBlue">
                         <NavLink className="menu-item" to="/" exact>
                             <div className="icon">
                                 <Home size={38} />
@@ -50,7 +50,7 @@ const ProfileCard = ({
                             </div>
                         </NavLink>
                     </Col>
-                    <Col sm="3" xs="6" className="p-0 text-center blue">
+                    <Col sm="4" xs="4" className="p-0 text-center blue">
                         <NavLink className="menu-item" to="/resume">
                             <div className="icon">
                                 <FileText size={38} />
@@ -58,19 +58,11 @@ const ProfileCard = ({
                             </div>
                         </NavLink>
                     </Col>
-                    <Col sm="3" xs="6" className="p-0 text-center midLightBlue">
+                    <Col sm="4" xs="4" className="p-0 text-center midLightBlue">
                         <NavLink className="menu-item" to="/projects" exact>
                             <div className="icon">
                                 <Briefcase size={38} />
                                 <h3 className="blockTitle">Projects</h3>
-                            </div>
-                        </NavLink>
-                    </Col>
-                    <Col sm="3" xs="6" className="p-0 text-center lightBlue">
-                        <NavLink className="menu-item" to="/contact" exact>
-                            <div className="icon">
-                                <Mail size={38} />
-                                <h3 className="blockTitle">Contact</h3>
                             </div>
                         </NavLink>
                     </Col>
