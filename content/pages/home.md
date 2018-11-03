@@ -15,15 +15,11 @@ about:
     title: Design
   blurb-3:
     description: >-
-      Simply put, I love creating cool things. Whether it's the technology an application is built in, if the idea and functionality is cool, or even if something can have a cool spin on it.
+      Simply put, I love creating cool things. Whether it's the technology an
+      application is built in, if the idea and functionality is cool, or even if
+      something can have a cool spin on it.
     title: Love Cool Stuff
-  intro: >-
-    Just part Web developer / Closet Weeb / Dad / Duder trying not to piss off
-    the internet.
-
-
-    Oh also I'm a computer programming graduate with some years of work
-    experience under my belt.
+  intro: 'I''m a Full Stack Web Developer, mostly focused around using Node and React.'
   title: A little bit about me
 attributes:
   favouriteThing: React JS
