@@ -3,10 +3,10 @@ import {Container, Row} from 'reactstrap'
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
-import { Frame } from '../myComponents/Frame';
-import desktop from '../images/desktoptest.png';
-import tablet from '../images/tablettest2.png';
-import phone from '../images/phonetest.png';
+import { Frame } from '../myComponents/Frame'
+import desktop from '../images/desktoptest.png'
+import tablet from '../images/tablettest2.png'
+import phone from '../images/phonetest.png'
 import './Projects.css'
 
 export default ({
