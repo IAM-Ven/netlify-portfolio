@@ -1,2 +1,81 @@
-.Blog {
+.Projects .ScreenFrames {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Projects .ScreenFrames .Frame{
+    position: relative;
+}
+
+.Projects .ScreenFrames .Frame .FrameSrc.desktopSrc{
+    position: absolute;
+    top: 2.5rem;
+    width: 82.5%;
+    height: 55.5%;
+    z-index: 0;
+    left: 2.5rem;
+}
+
+.Projects .ScreenFrames .Frame .FrameSrc.tabletSrc{
+    position: absolute;
+    top: 3.4rem;
+        width: 66.4%;
+        height: 65%;
+        z-index: 0;
+        left: 2.9rem;
+}
+
+.Projects .ScreenFrames .Frame .FrameSrc.phoneSrc{
+    position: absolute;
+    top: 3.5rem;
+        width: 58%;
+        height: 55%;
+        z-index: 0;
+        left: 2rem;
+}
+
+.Projects .ScreenFrames .Frame .FrameContainer{
+    margin: 1.5rem;
+}
+
+.Projects .ScreenFrames .Frame .FrameContainer.desktop{
+    max-height: 20rem;
+}
+
+.Projects .ScreenFrames .Frame .FrameContainer.tablet{
+    max-height: 20rem;
+}
+
+.Projects .ScreenFrames .Frame .FrameContainer.phone{
+    max-height: 15rem;
+}
+
+@media(min-width: 768px){
+    .Projects .ScreenFrames {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start; 
+    }
+    
+    .Projects .ScreenFrames .Frame .FrameContainer.desktop{
+        max-height: 30rem;
+    }
+    
+    .Projects .ScreenFrames .Frame .FrameContainer.tablet{
+        max-height: 20rem;
+    }
+    
+    .Projects .ScreenFrames .Frame .FrameContainer.phone{
+        max-height: 15rem;
+    }
+
+    .Projects .ScreenFrames .Frame .FrameSrc.desktopSrc{
+        top: 3rem;
+        width: 85%;
+        height: 59%;
+        z-index: 0;
+        left: 3rem;
+    }
 }
