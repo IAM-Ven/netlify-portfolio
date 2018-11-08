@@ -1,7 +1,8 @@
 ---
 title: This Portfolio Site
-image: /images/logo.png
-heroImage: /images/logo.png
+desktopImage: /images/uploads/desktoptest.png
+tabletImage: /images/uploads/tablettest2.png
+phoneImage: /images/uploads/phonetest.png
 key: my-portfolio
 detail: >-
   Yes I'm using my own portfolio site that you're currently on as a project and
