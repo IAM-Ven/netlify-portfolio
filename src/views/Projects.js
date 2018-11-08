@@ -4,9 +4,6 @@ import {Container, Row} from 'reactstrap'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import { Frame } from '../myComponents/Frame'
-import desktop from '../images/desktoptest.png'
-import tablet from '../images/tablettest2.png'
-import phone from '../images/phonetest.png'
 import './Projects.css'
 
 export default ({
@@ -27,9 +24,9 @@ export default ({
             <Row key={`project-${index}`}>
               <div className="p-5">
                 <div className="ScreenFrames">
-                  <Frame container='desktop' src={desktop} />
-                  <Frame container='tablet' src={tablet} />
-                  <Frame container='phone' src={phone} />
+                  <Frame container='desktop' src={project.desktopImage} />
+                  <Frame container='tablet' src={project.tabletImage} />
+                  <Frame container='phone' src={project.phoneImage} />
                 </div>
                 <h2>{project.title}</h2>
                 <Content source={project.detail} />
