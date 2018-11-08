@@ -1,14 +1,14 @@
 import React from 'react'
 import { string, oneOf } from 'prop-types'
 
-import desktop from '../../images/frames/desktop.png'
-import tablet from '../../images/frames/tablet.png'
-import phone from '../../images/frames/phone.png'
+//import desktop from '../../images/frames/desktop.png'
+//import tablet from '../../images/frames/tablet.png'
+//import phone from '../../images/frames/phone.png'
 
 const containers = {
-    desktop,
-    tablet,
-    phone
+    desktop: '/images/frames/desktop.png',
+    tablet: '/images/frames/tablet.png',
+    phone: '/images/frames/phone.png'
 }
 
 const Frame = ({
