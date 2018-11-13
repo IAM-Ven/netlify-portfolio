@@ -21,18 +21,18 @@ export default ({
       <Container fluid>
         {projects.map((project, index)=>{
           return (
-            <Row key={`project-${index}`}>
-              <div className="p-5">
+            <Row key={`project-${index}`} className="py-5 px-4">
                 <div className="ScreenFrames">
                   <Frame container='desktop' src={project.desktopImage} />
                   <Frame container='tablet' src={project.tabletImage} />
                   <Frame container='phone' src={project.phoneImage} />
                 </div>
-                <h2>{project.title}</h2>
-                <a className="Button mr-5 mb-3" href={project.link}>View Project</a>
-                <a className="Button mb-3" href={project.repoLink}>View Code</a>
-                <Content source={project.detail} />
-              </div>
+                <div className="Details">
+                  <h2>{project.title}</h2>
+                  <a className="Button mr-5 mb-3" href={project.link}>View Project</a>
+                  <a className="Button mb-3" href={project.repoLink}>View Code</a>
+                  <Content source={project.detail} />
+                </div>
             </Row>
           );
         })}
