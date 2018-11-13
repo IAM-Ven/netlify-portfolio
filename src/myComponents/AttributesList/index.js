@@ -14,7 +14,7 @@ const AttributesList = ({
                 attribute = attribute.replace(capitalLetterRegex, (match) => ` ${match}`);
 
                 return(
-                    <Col key={attribute} className="p-0 attributeContainer" sm="6" xs="12">
+                    <Col key={attribute} className="p-0 attributeContainer" lg="6" sm="6" xs="6">
                         <div className="p-5 attribute">
                             <h4 className="blockTitle">{attribute}</h4>
                             <p><small>{value}</small></p>

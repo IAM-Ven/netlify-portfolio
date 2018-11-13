@@ -22,22 +22,22 @@ export default ({ fields, featuredEmployment, featuredSkills }) => {
                     <div className="p-5">
                         <h2 className="blockTitle">{about.title}</h2>
                         <h4>{about.intro}</h4>
-                        <Row className="pt-5">
-                            <Col md="4" sm="12" className="text-center">
+                        <Row className="pt-3">
+                            <Col md="4" sm="12" className="text-center px-1">
                                 <Blurb
                                     title={about["blurb-1"].title}
                                     description={about["blurb-1"].description}
                                     Icon={Code}
                                 />
                             </Col>
-                            <Col md="4" sm="12" className="text-center">
+                            <Col md="4" sm="12" className="text-center px-1">
                                 <Blurb
                                     title={about["blurb-2"].title}
                                     description={about["blurb-2"].description}
                                     Icon={Edit}
                                 />
                             </Col>
-                            <Col md="4" sm="12" className="text-center">
+                            <Col md="4" sm="12" className="text-center px-1">
                                 <Blurb
                                     title={about["blurb-3"].title}
                                     description={about["blurb-3"].description}
