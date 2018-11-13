@@ -113,7 +113,7 @@ class App extends Component {
               exact
               component={Projects}
               fields={this.getDocument('pages', 'projects')}
-              projects={this.getDocuments('projects')}
+              projects={this.getDocuments('projects').reverse()}
             />
             <Route render={() => <NoMatch siteUrl={siteUrl} />} />
           </Switch>
