@@ -3,6 +3,8 @@ title: Smaller Bomb
 desktopImage: /images/uploads/smallerbomb-desktop.png
 tabletImage: /images/uploads/smallerbomb-tablet.png
 phoneImage: /images/uploads/smallerbomb-phone.png
+link: 'https://smaller-bomb.herokuapp.com/'
+repoLink: 'https://github.com/Phizzard/smaller-bomb'
 key: smaller-bomb
 detail: >-
   Smaller Bomb is a single page application made with Node, React, and Flex box,
