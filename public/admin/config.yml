@@ -279,6 +279,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Desktop Image, name: desktopImage, widget: image, hint: height(909px) / width(1662px)}
       - {label: Tablet Image, name: tabletImage, widget: image, hint: height(748px) / width(577px)}
       - {label: Phone Image, name: phoneImage, widget: image, hint: height(646px) / width(324px)}
+      - {label: Link, name: link, widget: string}
+      - {label: Repo Link, name: repoLink, widget: string}
       - {label: key, name: key, widget: string, required: true}
       - {label: Detail, name: detail, widget: markdown}
       - label: "Skills Used"
