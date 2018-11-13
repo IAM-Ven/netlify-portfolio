@@ -3,6 +3,8 @@ title: This Portfolio Site
 desktopImage: /images/uploads/desktoptest.png
 tabletImage: /images/uploads/tablettest2.png
 phoneImage: /images/uploads/phonetest.png
+link: 'https://philip-tietjen.netlify.com/'
+repoLink: 'https://github.com/Phizzard/netlify-portfolio'
 key: my-portfolio
 detail: >-
   Yes I'm using my own portfolio site that you're currently on as a project and
