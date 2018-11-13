@@ -182,7 +182,7 @@ blockquote {
 
 /* Buttons */
 
-.Button {
+a.Button, .Button {
   background: var(--primary);
   color: white;
   text-transform: uppercase;
@@ -226,6 +226,8 @@ blockquote {
       rgba(255, 255, 255, 0)
     );
 }
+
+
 .blockTitle{
     text-transform: uppercase;
     font-size: 2rem;

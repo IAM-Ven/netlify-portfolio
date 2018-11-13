@@ -29,6 +29,8 @@ export default ({
                   <Frame container='phone' src={project.phoneImage} />
                 </div>
                 <h2>{project.title}</h2>
+                <a className="Button mr-5 mb-3" href={project.link}>View Project</a>
+                <a className="Button mb-3" href={project.repoLink}>View Code</a>
                 <Content source={project.detail} />
               </div>
             </Row>
