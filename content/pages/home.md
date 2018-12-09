@@ -36,9 +36,7 @@ featuredSkills:
   - skill: react-js
   - skill: node-js
   - skill: javascript
-  - skill: jquery
   - skill: css
-  - skill: sql
 meta:
   title: ''
 ---
